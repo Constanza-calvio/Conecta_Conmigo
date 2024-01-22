@@ -1,0 +1,220 @@
+@charset "ISO-8859-1";
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.logo img{
+	max-width: 156px;
+	margin-left: 105px;
+	margin-top: 45px;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    margin-top: 30px;
+    left: 50%;
+    border: 1px solid white;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    color: #FFC727;
+    font-family: "Inter-Bold", sans-serif;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.banner {
+  width: 400px;
+  position: absolute;
+  top: 15%;
+  right: 0;
+  z-index: 0;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 125px;
+    margin-left: 110px;
+    margin-right: 110px;
+    width: auto;
+    
+  
+}
+
+
+.form-container {
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+    width: 100%;
+    background-color: #577AFA;
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    margin-right: 20px;
+    position: relative; 
+}
+
+
+
+
+.nav-container {
+    padding: 5px 40px;
+}
+
+.form-container a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+nav a {
+    padding-top: 45px;
+}
+
+nav a:nth-child(1) {
+    margin-right: auto;
+    color: #FFC727;
+}
+
+nav a:nth-child(2) {
+    margin-left: auto;
+}
+
+/* Estilo para la division del nav */
+.nav-divider {
+    display: block;
+    width: 100%;
+    height: 8px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.form{
+	width: 41%;
+	margin-top: 80px;
+	margin-left: 160px;
+}
+
+.form-container label {
+    display: block;
+  	margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+    margin-left: 25px;
+    padding-top: 30px;
+}
+
+/* Estilos para los inputs */
+.form-container input {
+    width: 100%;
+  	padding:  18px;
+  	font-size: 20px;
+  	box-sizing: border-box;
+  	margin-bottom: 20px;
+  	border-radius: 20px;
+  	margin-left: 25px;
+  	max-width: 92%;
+  	border: 1px solid rgb(154, 191, 228);
+}
+
+/* Estilos para los titulos de los label */
+.form-label {
+    color: rgb(255, 255, 255);
+    font-family: "Inter-SemiBold";
+}
+
+/* Mensaje de error */
+.error-message {
+    color: rgb(183, 0, 0);
+}
+
+/* Estilos para el boton de enviar */
+.form-container button {
+    display: block;
+    margin: auto;
+    
+}
+
+
+button {
+  padding: 25px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+  border: 0;
+  background-color: #FFC727;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+ button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 8px 8px rgba(0, 0, 0, 0.23);
+}
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+/* Estilos para el enlace de olvidaste tu contraseña */
+.olvidepassword {
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+    width: max-content;
+}
+
+/* Estilos para la imagen */
+.image-container {
+    position: absolute;
+    top: 0;
+    right: 120px;
+}
+
+.image-container img {
+    width: 400px;
+    height: auto;
+}
+
+.background-img {
+    width: 780px;
+    position: absolute;
+    left: 0;
+  	top: 290px;
+    z-index: 0;
+}
+.background-img2 {
+  width: 200px;
+  position: absolute;
+  left: 400px;
+  top: 880px;
+  z-index: 1;
+}

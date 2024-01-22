@@ -1,0 +1,589 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#top-content {
+    padding: 10px 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    height: 140px;
+}
+
+/* ESTILOS PARA LOGO */
+#logo {
+    max-width: 100%;
+    height: auto;
+}
+
+#logo {
+    width: 140px;
+    margin-left: 50px;
+}
+
+/* ESTILOS DEL NAV */
+#nav-link{
+  justify-content: space-between;
+}
+#nav-links li.active a {
+            border-bottom: 2px solid #F76D82;
+        }
+
+#nav-links {
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+}
+
+#nav-links {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#nav-links li {
+    padding-top: 10px;
+    padding: 0px 52px;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ESTILOS PARA EL BOTON DE USUARIO */
+.button {
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: #FFC727;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+    
+}
+
+
+.button:hover {
+    background-color: #e0b20b;
+}
+
+.button span {
+    margin-right: 10px;
+}
+
+.button img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.button.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 50px;
+}
+
+
+.button.active:hover {
+    background-color: #e0b20b;
+    
+}
+/* ESTILOS DEL MENU DEL BOTON */
+#profileMenu {
+    padding-bottom: 30px;
+    position: relative;
+    background-color: #FFC727;
+    border: 1px solid #FFC727;
+    padding: 10px;
+    z-index: 1;
+    width: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#profileMenu a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+#profileMenu a:hover {
+    background-color: #c49600; 
+}
+
+/*CONFIGURACION*/
+
+.button {
+  display: flex;
+}
+
+.lable {
+  letter-spacing: 1px;
+}
+
+.button:hover .svg-icon {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.svg-icon {
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.svg-icon circle {
+  fill: none;
+}
+
+.svg-icon path {
+  fill-rule: evenodd;
+}
+
+
+/*CERRAR SESION*/
+.Logout {
+	border-radius: 30px;
+    background-color: #FFC727;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	margin-top: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Btn {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(255, 65, 65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+}
+
+.sign svg {
+  width: 20px;
+}
+
+.sign svg path {
+  fill: white;
+}
+
+.text {
+	padding: 10px 10px;
+  position: absolute;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  top: 0;
+  transition-duration: .3s;
+}
+
+.Btn:hover {
+	transform: translateX(-50px);
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30px;
+  height: 30px;
+}
+
+.sign {
+  justify-content: space-between;
+}
+
+.Btn:hover .text {
+	transform: translateX(30%);
+  opacity: 1;
+  transition-duration: .3s;
+}
+
+.Btn:hover:not(.animation-complete) {
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btn:hover:not(.animation-complete) .sign {
+  width: 45px;
+  height: 45px;
+  transition-duration: .3s;
+  transform: translateX(-10px);
+}
+
+.Btn:hover:not(.animation-complete) .text {
+  opacity: 1;
+  transition-duration: .3s;
+}
+
+.Btn:hover:not(.animation-complete) svg {
+  transition-duration: .3s;
+}
+
+.Btn:active {
+  transform: translate(2px, 2px);
+}
+
+.Btn.animation-complete {
+  transition: none;
+}
+
+
+/* COMO AYUDAR */
+
+
+.main-container {
+    position: relative;
+    text-align: center;
+}
+
+/* Estilos para la sección con fondo azul */
+
+#comoAyudar {
+    background-image: url('/img-comoAyudar/Vectorcomoayudar.png');
+    text-align: center;
+    width: 100%;
+    height: 520px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    position: relative;
+    z-index: -1;
+}
+.blue-background {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+    
+}
+
+#comoAyudar h2 {
+    color: #f9cc05;
+    font-size: 120px;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+}
+
+.rectangles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rectangle {
+    margin: 0 40px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin-bottom: 8%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 0px 40px 40px 40px;
+    position: relative;
+    font-family: 'Inter-Regular', sans-serif;
+    text-align: justify;
+}
+
+.green-rectangle {
+    position: absolute;
+    top: 5%;
+    left: -20px;
+    height: 90px;
+    width: 350px;
+    background-color: #7EC1AE;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.green-rectangle a {
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    top: 17%;
+    font-family: "Inter-Medium", sans-serif;
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.rectangle-text {
+    margin-top: 60px;
+    padding: 120px 45px 40px 45px;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+    line-height: 1.5; /* Ajusta el valor según sea necesario */
+}
+
+.rectangle-image {
+    margin: 0 auto; /* Agrega margen superior e inferior automático y centraliza horizontalmente */
+    display: block; /* Esto asegura que el margen automático funcione correctamente */
+    width: 300px;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.rectangle-image-mujer {
+	margin: 0 auto;
+	display: block; /* Esto asegura que el margen automático funcione correctamente */
+    width: 400px;
+    height: auto;
+}
+
+
+
+
+
+/* OTRAS MANERAS PARA AYUDAR */
+
+
+.additional-ways-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.additional-ways-container h2 {
+  color: #7B85E8;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 100px;
+  padding-bottom: 70px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ajusta los valores según prefieras */
+}
+
+
+.additional-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 170px; /* Añade espacio entre la imagen y el rectángulo con texto */
+  margin-right: 170px;
+}
+
+.additional-image {
+  width: 520px; /* Ajusta esto según la proporción deseada */
+  height: auto; /* Para mantener la proporción de la imagen */
+  margin-left: 100px;
+  }
+.additional-info {
+  background-color: #ffffff;
+  padding: 80px 60px;
+  border-radius: 10px;
+  flex: 1;
+  font-size: 40px;
+  font-family: "Inter-Medium", sans-serif;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+
+
+
+/*foto a la derecha*/
+.links a {
+  text-decoration: none;
+  outline: none;
+  color: black;
+  }
+  
+
+.additional-ways-container-al-revez{
+  text-align: center;
+  padding: 20px;
+}
+.additional-image-redes {
+  max-width: 450px; /* Ajusta esto según la proporción deseada */
+  height: auto; /* Para mantener la proporción de la imagen */
+align-items: end;
+}
+
+.additional-info-redes {
+	margin-left: 200px;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  border-radius: 10px;
+  flex: 1;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "Inter-Medium", sans-serif;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.inverted .additional-content-al-revez {
+  flex-direction:row-reverse; /* Invierte el orden de los elementos flex */
+}
+
+
+
+ /* ESTILOS PARA LOS BOTONES */
+ 
+ 
+ button {
+    padding: 25px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+    border: 0;
+    background-color: #FFC727;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+.rectangle button {
+  padding: 30px 150px;
+  margin-top: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+  border: 0;
+  background-color: #FFC727;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 30px;
+  transition: all 0.5s ease;
+}
+.rectangle2 button {
+  padding: 30px 150px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+  border: 0;
+  background-color: #FFC727;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 30px;
+  transition: all 0.5s ease;
+}
+ button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 8px 8px rgba(0, 0, 0, 0.23);
+}
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
+  transform: translateY(10px);
+  transition: 100ms;
+}
+  
+  
+  @media (max-width: 768px) {
+    .rectangles-container {
+      flex-direction: column;
+    }
+  
+    .rectangle {
+      margin-bottom: 20px;
+      flex-basis: auto; 
+    }
+  }
+  
+  /* FOOTER */
+
+  footer {
+	margin-top: 100px;
+    background-color: #FC521E;
+    color: white;
+    padding: 20px;
+    font-family: 'Inter-Medium', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+  }
+  
+  .footer-section {
+    flex: 1;
+    text-align: center;
+  }
+  .footer-section a{
+    text-decoration: none;
+    color: #f9f9f9;
+  }
+  .footer-section.icons a {
+    color: white;
+    padding: 0 10px;
+  }
+  
+  .footer-section.icons i {
+    font-size: 1.5em; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-section:not(:first-child) {
+      margin-top: 10px;
+    }
+  }

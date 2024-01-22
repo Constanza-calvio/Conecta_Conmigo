@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter-Medium', sans-serif;
+}
+
+#top-content {
+    padding: 10px 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    height: 140px;
+}
+
+/* Estilos generales para el logotipo */
+#logo {
+    max-width: 100%;
+    height: auto;
+}
+
+#logo {
+    width: 140px;
+    margin-left: 50px;
+}
+
+#nav-link{
+  justify-content: space-between;
+}
+#nav-links li.active a {
+            border-bottom: 2px solid #F76D82;
+        }
+
+#nav-links {
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+}
+
+#nav-links {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#nav-links li {
+    padding-top: 10px;
+    padding: 0px 52px;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: #FFC727;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+    
+}
+
+
+.button:hover {
+    background-color: #e0b20b;
+}
+
+.button span {
+    margin-right: 10px;
+}
+
+.button img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.button.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#profileMenu {
+    padding-bottom: 30px;
+    position: relative;
+    background-color: #FFC727;
+    border: 1px solid #FFC727;
+    padding: 10px;
+    z-index: 1;
+    width: auto; /* Ancho del menú */
+    border-bottom-left-radius: 30px; /* Aplica el mismo redondeado en la esquina inferior izquierda */
+    border-bottom-right-radius: 30px;
+}
+
+#profileMenu a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+#profileMenu a:hover {
+    background-color: #c49600; /* Cambia el color de fondo al pasar el cursor */
+}
+
+/* SECCION-1 */
+
+#donar {
+    background-image: url('/img-donar/Rectangle 96donacion.png');
+    height: 330px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#donar h1 {
+  font-size: 130px;
+  margin-top: 80px;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+  justify-content: center;
+  color: white;
+}
+#donar p {
+  font-size: 25px;
+  margin-top: auto; 
+  color: white;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+}
+#sec-superior{
+    width: auto;
+    margin-top: 30px;
+}
+#byl {
+  position: relative;
+}
+.banner {
+  width: 180px;
+  height: auto;
+}
+#logo2 {
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: auto;
+}
+#superior {
+  margin-left: 230px;
+  margin-right: 230px;
+  background-color: #577AFA;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.tarjet{
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 130px;
+}
+.tarjet h2{
+    color: white;
+    text-align: center;
+    font-size: 120px;
+    font-weight: bold;
+  	font-family: "Inter-Medium", sans-serif;
+}
+.conecta_conmigo img {
+  padding-top: 50px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.montos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 75px;
+  justify-content: space-between;
+  margin: 0px 25px;
+}
+.montos button {
+  margin: 0 10px;
+  width: 250px;
+  background-color: white;
+  border: 2px solid #577AFA;
+  border-radius: 10px;
+  color: black;
+  font-size: 26px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+}
+.montos button:hover {
+  background-color: #fde400;
+  color: white;
+}
+.otromonto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.otromonto button {
+  margin-top: 50px;
+  width: 440px;
+  background-color: white;
+  border: 2px solid #577AFA;
+  border-radius: 10px;
+  color: black;
+  font-size: 26px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.otromonto button:hover {
+  background-color: #fde400;
+  color: white;
+}
+#superior form{
+  margin-top: 120px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+#sec-superior {
+  position: relative;
+  overflow: hidden;
+  background: url('./static/img/donar/Blob 3hastesocios.png') no-repeat center bottom;
+  background-size: cover;
+  min-height: 100vh;
+}
+.background-img {
+  width: 40%;
+  position: absolute;
+  top: 170%;
+  bottom: 0;
+  z-index: 0;
+}
+.background-img2 {
+  width: 80%;
+  position: absolute;
+  top: 170%;
+  bottom: 20px;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.tarjet .nombresyapellido {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.tarjet .nombresyapellido div {
+  width: 49%;
+}
+.tarjet .nombresyapellido label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+}
+.tarjet .nombresyapellido input {
+  width: 100%;
+  padding:  16px;
+  font-size: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 2px solid #577AFA;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+}
+.tarjet .correo {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.tarjet .correo div {
+  width: 100%;
+}
+.tarjet .correo label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+}
+.tarjet .correo input {
+  width: 100%;
+  padding:  16px;
+  font-size: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 2px solid #577AFA;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+}
+.tarjet .tel_tipo_nro {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.tarjet .tel_tipo_nro div {
+  width: 32%;
+}
+.tarjet .tel_tipo_nro label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+}
+.tarjet .tel_tipo_nro input,
+.tarjet .tel_tipo_nro select {
+  width: 100%;
+  padding:  16px;
+  font-size: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 2px solid #577AFA;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+}
+.tarjet .direccionypostal {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.tarjet .direccionypostal div {
+  width: 100%;
+}
+.tarjet .direccionypostal .dire{
+  width: 206%;
+  margin-right: 25px;
+}
+.tarjet .direccionypostal label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+}
+.tarjet .direccionypostal input {
+  width: 100%;
+  padding:  16px;
+  font-size: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 2px solid #577AFA;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+}
+.tarjet .local_provi_nacio {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.tarjet .local_provi_nacio div {
+  width: 32%;
+}
+.tarjet .local_provi_nacio label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+}
+.tarjet .local_provi_nacio input {
+  width: 100%;
+  padding:  16px;
+  font-size: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 2px solid #577AFA;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+}
+.tarjet .checkbox-group {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+.tarjet .checkbox-group label {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 26px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+}
+.tarjet .checkbox-group a {
+  color: #FC521E;
+}
+.checkbox-wrapper input[type="checkbox"] {
+  display: none;
+}
+.checkbox-wrapper .terms-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-family: "Inter-Medium", sans-serif;
+}
+.checkbox-wrapper .terms-label .label-text {
+  margin-left: 10px;
+}
+.checkbox-wrapper .checkbox-svg {
+  width: 30px;
+  height: 30px;
+}
+.checkbox-wrapper .receiveCertificate1,
+.checkbox-wrapper .acceptTerms1,
+.checkbox-wrapper .receiveInfo1 {
+  fill: rgba(207, 205, 205, 0.425);
+  stroke: #8c00ff;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  transition: stroke-dashoffset 0.6s ease-in;
+}
+.checkbox-wrapper .receiveCertificate2,
+.checkbox-wrapper .acceptTerms2,
+.checkbox-wrapper .receiveInfo2 {
+  stroke: #8c00ff;
+  stroke-dasharray: 172;
+  stroke-dashoffset: 172;
+  transition: stroke-dashoffset 0.6s ease-in;
+}
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .receiveCertificate1,
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .acceptTerms1,
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .receiveInfo1,
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .receiveCertificate2,
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .acceptTerms2,
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .receiveInfo2 {
+  stroke-dashoffset: 0;
+}
+.enviardonacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 110px;
+  padding-bottom: 100px;
+}
+button {
+    padding: 25px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+    border: 0;
+    background-color: #FFC727;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 8px 8px rgba(0, 0, 0, 0.23);
+}
+
+button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
+    transform: translateY(10px);
+    transition: 100ms;
+}
+#decoration-container {
+  position: relative;
+  margin-top: 350px;
+}
+.decoration1 {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+footer {
+    margin-top: 100px;
+    background-color: #FC521E;
+    color: white;
+    padding: 20px;
+    font-family: 'Inter-Medium', sans-serif;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Inter-Medium", sans-serif;
+    z-index: 2;
+    
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+    
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+.footer-section.icons a {
+    color: white;
+    padding: 0 10px;
+}
+
+.footer-section.icons i {
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section:not(:first-child) {
+        margin-top: 10px;
+    }
+}
