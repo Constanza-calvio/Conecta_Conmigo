@@ -3,6 +3,7 @@ Full-Stack bootcamp final project (Coding-dojo-Forge-Accenture) for certificatio
 Conecta_Conmigo is a sustainable project that was generated to solve 2 And 12 ODS ( the united nations sustainable development goals) 
 
 Partners: 
+
 Richard Moreano 
 
 Benjamin Aguero 
